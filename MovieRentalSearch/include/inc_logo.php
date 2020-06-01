@@ -12,4 +12,4 @@
  */
 ?>
 
-<a href="index.php"><img src="../images/logo.png" id="logo"/></a>
+<a href="index.php"><img src="images/logo.png" id="logo"/></a>
