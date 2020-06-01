@@ -49,6 +49,7 @@ a:hover, a:active, a:focus {
     width: 13%;
     background-color: rgb(160, 243, 243);
     padding-bottom: 1%;
+    font-size: 1.5vw;
 }
 .content {
 
