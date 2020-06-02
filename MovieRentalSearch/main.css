@@ -45,6 +45,10 @@ a:hover, a:active, a:focus {
     background-color: rgb(110, 182, 185);
 }
 
+table, th, td {
+    border: 1px solid black;
+    font-size: 1.25vw;
+}
 
 
 button[type=submit] {
