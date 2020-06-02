@@ -71,7 +71,7 @@ ul.nav li {
     border-bottom: 1px solid #666;
 }
 ul.nav a, ul.nav a:visited {
-    padding: 5px 5px 5px 15px;
+    padding: 1% 1% 1% 15px;
     display: block;
     width: 80%;
     text-decoration: none;
