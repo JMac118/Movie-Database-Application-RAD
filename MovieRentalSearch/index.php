@@ -20,6 +20,7 @@
 <meta name="HandheldFriendly" content="true">
 <title><?php echo basename(__FILE__, '.php'); ?></title>
 <link href="main.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
