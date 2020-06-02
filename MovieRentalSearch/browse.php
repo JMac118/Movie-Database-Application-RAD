@@ -41,7 +41,7 @@
         <?php List_Select_rating(); ?>
 
         <?php List_Select_year(); ?>
-        <button type = "submit">Search</button>
+        <button type = "submit" class = "button">Search</button>
     
     </form>
   </div>

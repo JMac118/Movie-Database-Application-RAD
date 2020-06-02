@@ -34,7 +34,7 @@
   <div class="content">
     <h1>Search</h1>
         <form action="search_results.php" method="post">
-        Title: <input type="title" name = "title">
+        Title: <input type="text" name = "title">
         
         <?php List_Select_genre(); ?>
         <button type = "submit">Search</button>

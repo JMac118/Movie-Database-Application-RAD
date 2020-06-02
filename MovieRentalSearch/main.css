@@ -45,6 +45,24 @@ a:hover, a:active, a:focus {
     background-color: rgb(110, 182, 185);
 }
 
+
+
+button[type=submit] {
+    width: 20%;
+    font-size: 1.2vw;
+    padding:  1vw 1vw;
+  }
+
+
+input[type=text], select, textarea{
+    width: 35%;
+    padding: 0.5vw;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 2vw;
+  }
+
 .sidebar1 {
     float: left;
     min-width: 70px;
@@ -58,6 +76,7 @@ a:hover, a:active, a:focus {
     padding: 1% 0;
     width: 65%;
     float: left;
+    font-size: 2.5vw;
 }
 .content ul, .content ol { 
     padding: 0 15px 15px 40px;
