@@ -12,4 +12,4 @@
  */
 ?>
 
-<p>&copy;2020 Copyright JMac. Developed by Joshua Macaulay.</p>
+<p>&copy;2020 Copyright Team A. Developed by Sam, Aashiyan, Josh.</p>
