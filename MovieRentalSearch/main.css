@@ -1,9 +1,13 @@
-body {
+
+
+html, body {
     font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
     background-color: rgb(60, 66, 66);
     margin: 0;
     padding: 0;
     color: #000;
+    height: 100vh;
+
 }
 ul, ol, dl {
     padding: 0;
@@ -39,6 +43,10 @@ a:hover, a:active, a:focus {
     width: 95%;
     background-color: #FFF;
     margin: 0 auto;
+    padding-bottom: 1vh;
+
+    height: 90vh;
+
 }
 
 .header {
@@ -72,8 +80,11 @@ input[type=text], select, textarea{
     min-width: 70px;
     width: 13%;
     background-color: rgb(160, 243, 243);
-    padding-bottom: 1%;
+    padding-bottom: 1vh;
+
     font-size: 2vw;
+
+    height: 70vh;
 }
 .content {
 
@@ -81,6 +92,8 @@ input[type=text], select, textarea{
     width: 65%;
     float: left;
     font-size: 2.5vw;
+
+
 }
 .content ul, .content ol { 
     padding: 0 15px 15px 40px;
@@ -99,6 +112,7 @@ ul.nav a, ul.nav a:visited {
     width: 80%;
     text-decoration: none;
     background-color: rgb(160, 243, 243);
+
 }
 ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
     background-color: rgb(160, 243, 243);
@@ -109,6 +123,7 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
     background-color: rgb(159, 199, 204);
     position: relative;
     clear: both;
+
 }
 .fltrt {
     float: right;
