@@ -101,7 +101,8 @@ if($result->num_rows >0) {
         imageline($chart, $gridLeft, $y, $gridRight, $y, $gridColor);
 
         // draw right aligned label
-        $labelBox = imagettfbbox($fontSize, 0, $font, strval($i));
+        // strval($i) -> strval(4) to fix alignment
+        $labelBox = imagettfbbox($fontSize, 0, $font, strval(4));
         $labelWidth = $labelBox[4] - $labelBox[0];
 
         //$labelX = $titles[$i];
