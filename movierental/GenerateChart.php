@@ -74,7 +74,7 @@ if($result->num_rows >0) {
     $yMaxValue = $max_value_found;
 
     // Distance between grid lines on y-axis
-    $yLabelSpan = 1;
+    $yLabelSpan = 5;
 
     // Init image
     $chart = imagecreate($imageWidth, $imageHeight);
