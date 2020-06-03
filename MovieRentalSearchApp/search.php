@@ -29,7 +29,7 @@
   
   <div class="content">
     <h1>Search</h1>
-        <form action="search_results.php" method="post">
+        <form class="formText" action="search_results.php" method="post">
         Movie Title: <input type="text" name = "title">
         
         <?php List_Select_genre(); ?>

@@ -16,6 +16,11 @@ body {
     text-align: center;	
 }
 
+/* Make font larger  */
+select, option {
+    font-size: 2.5vw;
+}
+
 ul, ol, dl {
     padding: 0;
     margin: 0;
@@ -25,8 +30,14 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
     padding-right: 5%;
     padding-left: 5%;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
 }
+
+/* Enlarged form text */
+.formText {
+    font-size: 3.5vw;
+}
+
 a img {
     border: none;
 }
@@ -162,28 +173,29 @@ input[type=text], select, textarea{
 
 
 /* Disable visibility of table columns based on device to avoid overstretching */
-/* Note: need to modify comments to be more accurate */
 @media only screen and (max-width: 768px) {
-	#turnover, tr td:nth-child(9)		{ display:none; visibility:hidden; }
+	tr td:nth-child(9)		{ 
+        display:none; visibility:hidden; 
+    }
 }
 
 @media only screen and (max-width: 420px) {
-	#changepercent, tr td:nth-child(4)	{ display:none; visibility:hidden; }
-	#yhigh, tr td:nth-child(5)			{ display:none; visibility:hidden; }
-	#ylow, tr td:nth-child(6)			{ display:none; visibility:hidden; }
-    #turnover, tr td:nth-child(9)		{ display:none; visibility:hidden; }
+	tr td:nth-child(4)	{ display:none; visibility:hidden; }
+	tr td:nth-child(5)			{ display:none; visibility:hidden; }
+	tr td:nth-child(6)			{ display:none; visibility:hidden; }
+    tr td:nth-child(9)		{ display:none; visibility:hidden; }
     table, th, td {
         font-size: 2.5vw;
     }
 }
 
 @media only screen and (max-width: 320px) {
-	#changepercent, tr td:nth-child(4)	{ display:none; visibility:hidden; }
-	#yhigh, tr td:nth-child(5)			{ display:none; visibility:hidden; }
-	#ylow, tr td:nth-child(6)			{ display:none; visibility:hidden; }
-	#dhigh, tr td:nth-child(7)			{ display:none; visibility:hidden; }
-	#dlow, tr td:nth-child(8)			{ display:none; visibility:hidden; }
-    #turnover, tr td:nth-child(9)		{ display:none; visibility:hidden; }
+	tr td:nth-child(4)	{ display:none; visibility:hidden; }
+	tr td:nth-child(5)			{ display:none; visibility:hidden; }
+	tr td:nth-child(6)			{ display:none; visibility:hidden; }
+	tr td:nth-child(7)			{ display:none; visibility:hidden; }
+	tr td:nth-child(8)			{ display:none; visibility:hidden; }
+    tr td:nth-child(9)		{ display:none; visibility:hidden; }
     table, th, td {
         font-size: 2.5vw;
     }
