@@ -30,11 +30,11 @@
       require_once 'include/inc_logo.php'; 
     ?>
   </div>
-    
   <div class="content">
     <h1>SMT Movie Rental</h1>
-    <p>Welcome to SMT Movie Rental. Please browse our catalogue.</p>
-    <p>afw</p>
+    <p>Welcome to SMT Movie Rental.</p>
+</br>
+    <p>Please browse our catalogue.</p>
   </div>
   <div class="footer">
     <?php require_once 'include/inc_footer.php'; ?>

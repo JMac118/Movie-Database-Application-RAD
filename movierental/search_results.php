@@ -31,9 +31,11 @@
         <?php require_once "search_function.php"; 
         $str = search();
         print $str;
+        echo "</br></br>";
         ?>
-
+        
   </div>
+
   <div class="footer">
     <?php require_once 'include/inc_footer.php'; ?>
   </div>

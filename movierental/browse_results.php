@@ -32,7 +32,7 @@
         $str = browse();
         print $str;
         ?>
-
+</br></br></br>
   </div>
   <div class="footer">
     <?php require_once 'include/inc_footer.php'; ?>

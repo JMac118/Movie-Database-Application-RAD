@@ -1,17 +1,20 @@
-
-
 html, body {
-    font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+    height: 100%;
+    max-width: 100%;
+}
 
+body {
+    font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+    
     background-color: white;
     margin: 0;
     padding: 0;
     color: #000;
-    height: auto;
-    width: 100%;
+    height: 100%;
+    width: auto;
     text-align: center;	
-
 }
+
 ul, ol, dl {
     padding: 0;
     margin: 0;
@@ -42,8 +45,9 @@ a:visited {
 a:hover, a:active, a:focus {
     text-decoration: none;
 }
+
 .container {
-    width: fit-content;
+    width: auto;
     background-color: #FFF;
     margin: auto;
     padding-bottom: 1vh;    
@@ -51,13 +55,12 @@ a:hover, a:active, a:focus {
 }
 
 .header {
-    background-color: rgb(110, 182, 185);
-    
+    background-color: rgb(110, 182, 185);    
 }
 
 table, th, td {
     border: 1px solid black;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 
@@ -78,13 +81,9 @@ input[type=text], select, textarea{
   }
 
 .content {
-
     padding: 1% 0;
-    width: auto;
-    float: left;
-    font-size: 2.5vw;
-    margin-left: 2%;
-
+    width: auto;    
+    font-size: 1.5vw;
 }
 .content ul, .content ol { 
     padding: 0 15px 15px 40px;
@@ -93,26 +92,18 @@ input[type=text], select, textarea{
 .footer {
     padding: 1% 0;
     background-color: rgb(159, 199, 204);
-    position: relative;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
     clear: both;
+}
 
-}
-.fltrt {
-    float: right;
-    margin-left: 8px;
-}
-.fltlft {
-    float: left;
-    margin-right: 8px;
-}
-.clearfloat {
-    clear:both;
-    height:0;
-    font-size: 1px;
-    line-height: 0px;
+.footerP {
+    font-size: small;
 }
 
 .graphImg {
+    margin-left: 2%;
     width: 100%;
     height: auto;
 }
@@ -158,3 +149,29 @@ input[type=text], select, textarea{
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;} 
+
+@media only screen and (max-width: 768px) {
+	#turnover, tr td:nth-child(9)		{ display:none; visibility:hidden; }
+}
+
+@media only screen and (max-width: 420px) {
+	#changepercent, tr td:nth-child(4)	{ display:none; visibility:hidden; }
+	#yhigh, tr td:nth-child(5)			{ display:none; visibility:hidden; }
+	#ylow, tr td:nth-child(6)			{ display:none; visibility:hidden; }
+    #turnover, tr td:nth-child(9)		{ display:none; visibility:hidden; }
+    table, th, td {
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+	#changepercent, tr td:nth-child(4)	{ display:none; visibility:hidden; }
+	#yhigh, tr td:nth-child(5)			{ display:none; visibility:hidden; }
+	#ylow, tr td:nth-child(6)			{ display:none; visibility:hidden; }
+	#dhigh, tr td:nth-child(7)			{ display:none; visibility:hidden; }
+	#dlow, tr td:nth-child(8)			{ display:none; visibility:hidden; }
+    #turnover, tr td:nth-child(9)		{ display:none; visibility:hidden; }
+    table, th, td {
+        font-size: 2.5vw;
+    }
+}

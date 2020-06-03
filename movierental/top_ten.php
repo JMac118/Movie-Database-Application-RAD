@@ -28,11 +28,11 @@
 
   <div class="content">
     <h1>Top 10</h1>
-    <h2>Most Searched</h2>
+    <h2>Most Searched films according to the movie database</h2>
 
     <?php require_once "GenerateChart.php";?>
     
-    
+</br></br></br>
 
   </div>
   <div class="footer">
