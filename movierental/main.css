@@ -3,6 +3,7 @@ html, body {
     max-width: 100%;
 }
 
+/* Text centered to look a little better on smaller devices */
 body {
     font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
     
@@ -19,6 +20,7 @@ ul, ol, dl {
     padding: 0;
     margin: 0;
 }
+
 h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
     padding-right: 5%;
@@ -28,12 +30,14 @@ h1, h2, h3, h4, h5, h6, p {
 a img {
     border: none;
 }
+
 #logo {
     background-color: rgb(110, 182, 185);
     display: inline-block;
     width: 10;
     height: 10;
 }
+
 a:link {
     color: #42413C;
     text-decoration: underline;
@@ -46,6 +50,7 @@ a:hover, a:active, a:focus {
     text-decoration: none;
 }
 
+/* Width set to auto to make element stretch across whole screen */
 .container {
     width: auto;
     background-color: #FFF;
@@ -58,6 +63,7 @@ a:hover, a:active, a:focus {
     background-color: rgb(110, 182, 185);    
 }
 
+/* Font size reduced for table so it fits better on larger devices */
 table, th, td {
     border: 1px solid black;
     font-size: 1.5vw;
@@ -89,6 +95,7 @@ input[type=text], select, textarea{
     padding: 0 15px 15px 40px;
 }
 
+/* Added bottom and position fixed attributes so that footer sticks to bottom */
 .footer {
     padding: 1% 0;
     background-color: rgb(159, 199, 204);
@@ -98,18 +105,21 @@ input[type=text], select, textarea{
     clear: both;
 }
 
+/* Footer taking up too much space so font size reduced */
 .footerP {
     font-size: small;
 }
 
+/* Makes graph responsive, margin-left to fix the alignment slightly */
 .graphImg {
     margin-left: 2%;
     width: 100%;
     height: auto;
 }
 
- /* Dropdown Button */
- .dropbtn {
+/* ***Dropdown button implementation*** */
+/* Dropdown Button */
+.dropbtn {
     background-color: #4CAF50;
     color: white;
     padding: 16px;
@@ -117,14 +127,14 @@ input[type=text], select, textarea{
     border: none;
   }
   
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
     position: relative;
     display: inline-block;
   }
   
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -133,23 +143,26 @@ input[type=text], select, textarea{
     z-index: 1;
   }
   
-  /* Links inside the dropdown */
-  .dropdown-content a {
+/* Links inside the dropdown */
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
   
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
   
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;} 
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;} 
 
+
+/* Disable visibility of table columns based on device to avoid overstretching */
+/* Note: need to modify comments to be more accurate */
 @media only screen and (max-width: 768px) {
 	#turnover, tr td:nth-child(9)		{ display:none; visibility:hidden; }
 }
