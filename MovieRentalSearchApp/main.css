@@ -174,29 +174,29 @@ input[type=text], select, textarea{
 
 /* Disable visibility of table columns based on device to avoid overstretching */
 @media only screen and (max-width: 768px) {
-	tr td:nth-child(9)		{ 
+	tr td:nth-child(9) { 
         display:none; visibility:hidden; 
-    }
+	}
 }
 
 @media only screen and (max-width: 420px) {
 	tr td:nth-child(4)	{ display:none; visibility:hidden; }
-	tr td:nth-child(5)			{ display:none; visibility:hidden; }
-	tr td:nth-child(6)			{ display:none; visibility:hidden; }
-    tr td:nth-child(9)		{ display:none; visibility:hidden; }
-    table, th, td {
+	tr td:nth-child(5)	{ display:none; visibility:hidden; }
+	tr td:nth-child(6)	{ display:none; visibility:hidden; }
+	tr td:nth-child(9)	{ display:none; visibility:hidden; }
+	table, th, td {
         font-size: 2.5vw;
-    }
+	}
 }
 
 @media only screen and (max-width: 320px) {
 	tr td:nth-child(4)	{ display:none; visibility:hidden; }
-	tr td:nth-child(5)			{ display:none; visibility:hidden; }
-	tr td:nth-child(6)			{ display:none; visibility:hidden; }
-	tr td:nth-child(7)			{ display:none; visibility:hidden; }
-	tr td:nth-child(8)			{ display:none; visibility:hidden; }
-    tr td:nth-child(9)		{ display:none; visibility:hidden; }
-    table, th, td {
+	tr td:nth-child(5)	{ display:none; visibility:hidden; }
+	tr td:nth-child(6)	{ display:none; visibility:hidden; }
+	tr td:nth-child(7)	{ display:none; visibility:hidden; }
+	tr td:nth-child(8)	{ display:none; visibility:hidden; }
+	tr td:nth-child(9)	{ display:none; visibility:hidden; }
+	table, th, td {
         font-size: 2.5vw;
-    }
+	}
 }
