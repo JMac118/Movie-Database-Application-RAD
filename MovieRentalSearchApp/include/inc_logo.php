@@ -19,6 +19,7 @@
         <a href="browse.php">Browse</a>
         <a href="top_ten.php">Top 10</a>
         <a href="contact.php">Contact</a>
+        <a href="signup.php">Sign Up</a>
     </div>
 </div> 
 
