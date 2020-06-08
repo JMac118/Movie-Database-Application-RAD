@@ -133,7 +133,7 @@ input[type=password], select, textarea{
 /* Makes graph responsive, margin-left to fix the alignment slightly */
 .graphImg {
     margin-left: 2%;
-    width: 100%;
+    width: 98%;
     height: auto;
 }
 

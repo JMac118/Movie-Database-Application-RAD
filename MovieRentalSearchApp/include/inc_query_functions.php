@@ -195,4 +195,19 @@ function searchTopTen()
     return $result;
 }
 
+function sendMail($email, $bodyText, $title)
+{
+    $to_email = $email;
+    $sender = "MovieRentalSMT@gmail.com";
+    $subject = $title;
+    $body = $bodyText;
+    $headers = "From: " . $sender;
+
+    if (mail($to_email, $subject, $body, $headers)) {        
+        return true;
+    } 
+    
+    return false;
+}
+
 ?>
