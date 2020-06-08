@@ -20,6 +20,7 @@
         <a href="top_ten.php">Top 10</a>
         <a href="contact.php">Contact</a>
         <a href="signup.php">Sign Up</a>
+        <a href="admin.php">Admin</a>
     </div>
 </div> 
 
