@@ -97,6 +97,15 @@ input[type=text], select, textarea{
     font-size: 2vw;
   }
 
+input[type=password], select, textarea{
+    width: 35%;
+    padding: 0.5vw;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 2vw;
+  }
+
 .content {
     padding: 1% 0;
     width: auto;    
