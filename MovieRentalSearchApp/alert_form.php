@@ -19,16 +19,6 @@ if (isset($_POST["SubmitButton"])) {
     }
 }
 
-function getUsersWhoReceiveAlert()
-{
-    global $db;
-
-    $strQuery = "SELECT * from users WHERE getsAlert = 1";
-    if ($res = mysqli_query($db, $strQuery)) {
-        return $res;
-    }
-}
-
 ?>
 
 <form action="" method="POST" id="alertForm">

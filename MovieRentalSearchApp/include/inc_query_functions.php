@@ -195,6 +195,26 @@ function searchTopTen()
     return $result;
 }
 
+function getUsersWhoReceiveNewsletter()
+{
+    global $db;
+
+    $strQuery = "SELECT * from users WHERE getsNewsletter = 1";
+    if ($res = mysqli_query($db, $strQuery)) {
+        return $res;
+    }
+}
+
+function getUsersWhoReceiveAlert()
+{
+    global $db;
+
+    $strQuery = "SELECT * from users WHERE getsAlert = 1";
+    if ($res = mysqli_query($db, $strQuery)) {
+        return $res;
+    }
+}
+
 function sendMail($email, $bodyText, $title)
 {
     $to_email = $email;

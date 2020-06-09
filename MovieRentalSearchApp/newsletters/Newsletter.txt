@@ -1,0 +1,11 @@
+Hello Subscribers,
+
+Each newsletter is placed in a dir called "newsletters".
+Every month the editor writes a new newsletter and places
+it in the dir. When the php script is run, it reads the text
+file and sends it as the body of the newsletter email.
+
+Thank you for reading. Look forward to next
+month's issue.
+
+Editor 
