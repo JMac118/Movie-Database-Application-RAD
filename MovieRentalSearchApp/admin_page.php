@@ -78,6 +78,9 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
     </div>
     <div class="footer">
       <?php require_once 'include/inc_footer.php'; ?>
+      <form action= "include/logout.php">
+      <button type="submit" value = "Logout">Logout</button>
+      </form>
     </div>
   </div>
 </body>
