@@ -58,6 +58,11 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
 
       ?>
       <div class="content">
+      <form action= "list_users.php">
+        <button type="submit" value = "Display Users">Display All Users</button>
+        </form>
+        </br>
+
         <p1>Enter email address of user to delete from records</p1>
         <span><?php echo $message; ?></span>
         <form action="include/delete_user.php" method="post">
@@ -65,9 +70,12 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
             <label for="email">Email:</label>
             <input type="email" FILTER_VALIDATE_EMAIL class="form-control" id="email" name="email" required>
           </div>
-          </br>
           <button type="submit" name="delete" value="delete" class="btn btn-default">Delete</button>
         </form>
+
+        
+
+
         </br>
         <h2>Send a Breaking Alert:</h2>
         </br></br>

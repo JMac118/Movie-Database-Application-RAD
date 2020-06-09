@@ -28,6 +28,17 @@ function List_genre()
     return $result;
 }
 
+function list_users()
+{
+    global $db;
+
+    $sql = "SELECT id, name, email, getsNewsletter, getsAlert FROM users ORDER BY id ASC";
+
+    $result = mysqli_query($db, $sql);
+    confirm_result_set($result);
+    return $result;
+}
+
 /** 
  * Lists all ratings in db
  *
