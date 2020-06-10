@@ -73,12 +73,9 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
           <button type="submit" name="delete" value="delete" class="btn btn-default">Delete</button>
         </form>
 
-        
-
-
-        </br>
-        <h2>Send a Breaking Alert:</h2>
         </br></br>
+        <h2>Send a Breaking Alert:</h2>
+        
         <?php require_once 'alert_form.php' ?>
         </br></br></br>
       </div>

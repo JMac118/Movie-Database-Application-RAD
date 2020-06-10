@@ -1,1 +1,1 @@
-C:\xampp\php\php.exe -f C:\xampp\htdocs\img\MovieRental\newsletter_scr.php
+C:\xampp\php\php.exe -f C:\xampp\htdocs\MovieRentalSearch\newsletter_scr.php
