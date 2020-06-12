@@ -117,6 +117,8 @@ function searchTitleGenre($title, $genre)
  */
 function searchTitle($title)
 {
+    global $db;
+
     $sql = "SELECT * FROM movies WHERE title LIKE '%";
     $sql .= $title;
     $sql .= "%';";
@@ -241,4 +243,24 @@ function sendMail($email, $bodyText, $title)
     return false;
 }
 
-?>
+function updateAverage($resultSet, $rating)
+    {
+        global $db;
+        
+        $sqlUpdate = "";
+
+        while ($row = mysqli_fetch_array($resultSet)) {
+            
+            $inc = $row[12] + 1;
+            $total = $row[13] + $rating;
+            $avg = $total / $inc;
+            
+            $sqlUpdate .= sprintf("UPDATE movies SET TimesRated='%d',TotalStars='%d',avgStars='%d'",
+                $inc, $total, $avg);
+            $sqlUpdate .= " WHERE id='" . $row[0] . "'";
+            mysqli_query($db, $sqlUpdate);
+            
+        }
+        
+        return $sqlUpdate;
+    }
