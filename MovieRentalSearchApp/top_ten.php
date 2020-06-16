@@ -34,6 +34,9 @@
       <h2>Top 10 Most Searched films according to the movie database</h2>
       <?php require_once "GenerateChart.php"; ?>
       </br></br>
+      <h2>Top Rated Movies:</h2>
+      <?php require_once "GenChartTopRated.php"; ?>
+      </br></br>
       <h2>Searches for January:</h2>
       <img src="data/analyticsJan.php" alt="Searches for January">
       <h2>Searches for February:</h2>

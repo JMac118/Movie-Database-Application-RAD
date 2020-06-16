@@ -208,6 +208,18 @@ function searchTopTen()
     return $result;
 }
 
+function searchTopTenRated()
+{
+    global $db;
+
+    $sql = "SELECT Title, AvgStars FROM movies ORDER BY AvgStars DESC LIMIT 10;";
+
+    $result = mysqli_query($db, $sql);
+    confirm_result_set($result);
+
+    return $result;
+}
+
 function getUsersWhoReceiveNewsletter()
 {
     global $db;
