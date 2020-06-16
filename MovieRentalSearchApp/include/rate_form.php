@@ -8,7 +8,7 @@ if (isset($_POST["submitRating"])) {
     
     if (mysqli_num_rows($targetMovie) === 1) {
 
-        updateAverage($targetMovie, $score);
+        echo updateAverage($targetMovie, $score);
         
     } else {
         // do not edit
