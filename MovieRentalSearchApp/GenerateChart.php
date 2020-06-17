@@ -148,12 +148,12 @@ if($result->num_rows >0) {
     * Output image to file
     */
 
-    imagepng($chart, 'chart.png');
+    imagepng($chart, 'chart2.png');
 
     /*
     * Output image to browser
     */
 
-    echo "<img class='graphImg' src = 'chart.png'>";
+    echo "<img class='graphImg' src = 'chart2.png'>";
 }
 ?>
