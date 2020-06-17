@@ -119,9 +119,10 @@ function searchTitle($title)
 {
     global $db;
 
-    $sql = "SELECT * FROM movies WHERE title LIKE '%";
-    $sql .= $title;
-    $sql .= "%';";
+    $sql = "SELECT * FROM movies WHERE title LIKE '";
+    $sql .= mysqli_real_escape_string($db, $title,);
+    $sql .= "'";
+    
 
     $result = mysqli_query($db, $sql);
     confirm_result_set($result);
