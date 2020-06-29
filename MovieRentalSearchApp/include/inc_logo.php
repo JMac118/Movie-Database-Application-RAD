@@ -17,7 +17,8 @@
         <a href="index.php">Home</a>
         <a href="search.php">Search</a>
         <a href="browse.php">Browse</a>
-        <a href="top_ten.php">Top 10</a>
+        <a href="rate.php">Rate a Movie</a>
+        <a href="top_ten.php">Analytics</a>
         <a href="contact.php">Contact</a>
         <a href="signup.php">Sign Up</a>
         <a href="admin.php">Admin</a>

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PHP Version 5
  *
@@ -18,26 +19,25 @@
  */
 require_once 'include/inc_initialize.php';
 
-$result = SearchTopTen();
+$result = searchTopTenRated();
 
-$max_value_found = 10;
+$max_value_found = 5;
 $titles = array(10);
-$timesSearched = array(10);
+$avgStars = array(10);
 
-if($result->num_rows >0) {
-    for($i = 0; $i < 10; $i++){
+if ($result->num_rows > 0) {
+    for ($i = 0; $i < 10; $i++) {
         $row = $result->fetch_assoc();
 
         $titles[$i] = $row["Title"];
-        $timesSearched[$i] = $row["TimesSearched"];
+        $avgStars[$i] = $row["AvgStars"];
 
-        if($timesSearched[$i] > $max_value_found) {
-            $max_value_found = $timesSearched[$i];
+        if ($avgStars[$i] > $max_value_found) {
+            $max_value_found = $avgStars[$i];
         }
-
     }
 
-    $data = $timesSearched;
+    $data = $avgStars;
 
 
     // Image dimensions
@@ -47,11 +47,11 @@ if($result->num_rows >0) {
 
     // Grid dimensions and placement within image
     //$gridTop = 40;
-        $gridTop = 5;
+    $gridTop = 5;
     //$gridLeft = 50;
-        $gridLeft = 20;
+    $gridLeft = 20;
     //$gridBottom = 340;
-        $gridBottom = 360;
+    $gridBottom = 360;
     $gridRight = 650;
     $gridHeight = $gridBottom - $gridTop;
     $gridWidth = $gridRight - $gridLeft;
@@ -94,7 +94,7 @@ if($result->num_rows >0) {
     * Print grid lines bottom up
     */
 
-    for($i = 0; $i <= $yMaxValue; $i += $yLabelSpan) {
+    for ($i = 0; $i <= $yMaxValue; $i += $yLabelSpan) {
         $y = $gridBottom - $i * $gridHeight / $yMaxValue;
 
         // draw the line
@@ -120,7 +120,7 @@ if($result->num_rows >0) {
     $barSpacing = $gridWidth / count($data);
     $itemX = $gridLeft + $barSpacing / 2;
 
-    foreach($data as $key => $value) {
+    foreach ($data as $key => $value) {
         // Draw the bar
         $x1 = $itemX - $barWidth / 2;
         $y1 = $gridBottom - $value / $yMaxValue * $gridHeight;
@@ -132,7 +132,7 @@ if($result->num_rows >0) {
         // Draw the label
         $labelBox = imagettfbbox($fontSize, 0, $font, $key);
         $labelWidth = $labelBox[4] - $labelBox[0];
-        
+
         //$labelX = $titles[$value];
         //$labelX = $itemX - $labelWidth / 2;
         $labelX = $itemX - $labelWidth - 15;
@@ -142,18 +142,17 @@ if($result->num_rows >0) {
         imagettftext($chart, $fontSize, -45, $labelX, $labelY, $labelColor, $font, $titles[$key]);
 
         $itemX += $barSpacing;
-    } 
+    }
 
     /*
     * Output image to file
     */
 
-    imagepng($chart, 'chart2.png');
+    imagepng($chart, 'chart.png');
 
     /*
     * Output image to browser
     */
 
-    echo "<img class='graphImg' src = 'chart2.png'>";
+    echo "<img class='graphImg' src = 'chart.png'>";
 }
-?>

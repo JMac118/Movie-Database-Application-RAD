@@ -72,12 +72,9 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
           </div>
           <button type="submit" name="delete" value="delete" class="btn btn-default">Delete</button>
         </form>
-
         </br></br>
-        <h2>Send a Breaking Alert:</h2>
-        
-        <?php require_once 'alert_form.php' ?>
-        </br></br></br>
+
+        <?php if($_SESSION['user'] == "admin") { breakingAlert(); } ?>
       </div>
 
     </div>
@@ -91,3 +88,14 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
 </body>
 
 </html>
+
+<?php
+
+function breakingAlert()
+{
+  echo "<h2>Send a Breaking Alert:</h2>";
+  require_once 'alert_form.php';
+  echo "</br></br></br>";
+}
+
+?>
