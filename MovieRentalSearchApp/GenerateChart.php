@@ -154,6 +154,6 @@ if($result->num_rows >0) {
     * Output image to browser
     */
 
-    echo "<img class='graphImg' src = 'chart2.png'>";
+    echo "<img class='graphImg' src = 'chart2.png'  alt='Top 10 searched movies'>";
 }
 ?>

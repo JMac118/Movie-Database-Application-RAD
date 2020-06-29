@@ -12,7 +12,8 @@
  */
 ?>
 <div class="dropdown">
-    <input type="image" src="images/logo.png" id="logo" class="dropbtn"/>
+    <input type="image" src="images/logo.png" id="logo" class="dropbtn" 
+        alt='SMTafe logo. When hovered over creates drop down navigation menu'/>
     <div class="dropdown-content">
         <a href="index.php">Home</a>
         <a href="search.php">Search</a>

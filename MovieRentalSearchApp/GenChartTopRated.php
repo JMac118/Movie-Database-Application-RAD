@@ -154,5 +154,5 @@ if ($result->num_rows > 0) {
     * Output image to browser
     */
 
-    echo "<img class='graphImg' src = 'chart.png'>";
+    echo "<img class='graphImg' src = 'chart.png' alt='Top 10 rated movies'>";
 }
