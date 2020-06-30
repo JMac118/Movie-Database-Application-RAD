@@ -26,7 +26,6 @@ if (isset($_POST["SubmitButton"])) {
     </br>
     <input type="text" name="subject" required>
     </br>
-    <!-- Disable resizing of textarea -->
     <label for="alertText">Alert Message:</label>
     </br>
     <textarea name="alertText" id="alertForm" cols="30" rows="10" required></textarea>

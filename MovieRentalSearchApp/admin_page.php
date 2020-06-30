@@ -58,8 +58,8 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
 
       ?>
       <div class="content">
-      <form action= "list_users.php">
-        <button type="submit" value = "Display Users">Display All Users</button>
+        <form action="list_users.php">
+          <button type="submit" value="Display Users">Display All Users</button>
         </form>
         </br>
 
@@ -68,20 +68,27 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
         <form action="include/delete_user.php" method="post">
           <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" FILTER_VALIDATE_EMAIL class="form-control" id="email" name="email" required>
+            <input type="email" class="form-control" id="email" name="email" required>
           </div>
           <button type="submit" name="delete" value="delete" class="btn btn-default">Delete</button>
         </form>
         </br></br>
 
-        <?php if($_SESSION['user'] == "admin") { breakingAlert(); } ?>
+        <?php if ($_SESSION['user'] == "admin") {
+
+          echo "<h2>Send a Breaking Alert:</h2>";
+          require_once 'alert_form.php';
+          echo "</br></br></br>";
+
+        }
+        ?>
       </div>
 
     </div>
     <div class="footer">
       <?php require_once 'include/inc_footer.php'; ?>
-      <form action= "include/logout.php">
-      <button type="submit" value = "Logout">Logout</button>
+      <form action="include/logout.php">
+        <button type="submit" value="Logout">Logout</button>
       </form>
     </div>
   </div>
@@ -90,12 +97,3 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
 </html>
 
 <?php
-
-function breakingAlert()
-{
-  echo "<h2>Send a Breaking Alert:</h2>";
-  require_once 'alert_form.php';
-  echo "</br></br></br>";
-}
-
-?>

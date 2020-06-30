@@ -120,7 +120,7 @@ function searchTitle($title)
     global $db;
 
     $sql = "SELECT * FROM movies WHERE title LIKE '";
-    $sql .= mysqli_real_escape_string($db, $title,);
+    $sql .= mysqli_real_escape_string($db, $title);
     $sql .= "'";
     
 
@@ -238,6 +238,8 @@ function getUsersWhoReceiveAlert()
     $strQuery = "SELECT * from users WHERE getsAlert = 1";
     if ($res = mysqli_query($db, $strQuery)) {
         return $res;
+    } else {
+        return false;
     }
 }
 
