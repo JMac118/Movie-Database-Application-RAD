@@ -15,14 +15,14 @@
     <input type="image" src="images/logo.png" id="logo" class="dropbtn" 
         alt='SMTafe logo. When hovered over creates drop down navigation menu'/>
     <div class="dropdown-content">
-        <a href="index.php">Home</a>
-        <a href="search.php">Search</a>
-        <a href="browse.php">Browse</a>
-        <a href="rate.php">Rate a Movie</a>
-        <a href="top_ten.php">Analytics</a>
-        <a href="contact.php">Contact</a>
-        <a href="signup.php">Sign Up</a>
-        <a href="admin.php">Admin</a>
+        <a href="index.php" title="Go to the home page" >Home</a>
+        <a href="search.php" title="Search for a movie">Search</a>
+        <a href="browse.php" title="Browse movies by category">Browse</a>
+        <a href="rate.php" title="Rate a movie out of 5">Rate a Movie</a>
+        <a href="top_ten.php" title="Stats and historical search data">Analytics</a>
+        <a href="contact.php" title="Contact information">Contact</a>
+        <a href="signup.php" title="Sign up and subscribe to our email service">Sign Up</a>
+        <a href="admin.php" title="Admin control panel">Admin</a>
     </div>
 </div> 
 

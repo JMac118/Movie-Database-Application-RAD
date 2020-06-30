@@ -59,7 +59,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
       ?>
       <div class="content">
         <form action="list_users.php">
-          <button type="submit" value="Display Users">Display All Users</button>
+          <button type="submit" value="Display Users">Display All Subscribed Users</button>
         </form>
         </br>
 
@@ -76,7 +76,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
 
         <?php if ($_SESSION['user'] == "admin") {
 
-          echo "<h2>Send a Breaking Alert:</h2>";
+          echo "<h2>Send a Breaking Alert To Subscribed Users:</h2>";
           require_once 'alert_form.php';
           echo "</br></br></br>";
 
