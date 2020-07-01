@@ -38,6 +38,7 @@
     
     </form>
   </div>
+  </br></br></br>
   <div class="footer">
     <?php require_once 'include/inc_footer.php'; ?>
   </div>

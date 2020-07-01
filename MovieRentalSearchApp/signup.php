@@ -40,6 +40,7 @@
       <?php require_once 'include/inc_footer.php'; ?>
     </div>
   </div>
+  </br></br></br>
 </body>
 
 </html>
