@@ -15,7 +15,7 @@
     <input type="image" src="images/logo.png" id="logo" class="dropbtn" 
         alt='SMTafe logo. When hovered over creates drop down navigation menu'/>
     <div class="dropdown-content">
-        <a href="index.php" title="Go to the home page" >Home</a>
+        <a href="index.php" title="Go to the home page">Home</a>
         <a href="search.php" title="Search for a movie">Search</a>
         <a href="browse.php" title="Browse movies by category">Browse</a>
         <a href="rate.php" title="Rate a movie out of 5">Rate a Movie</a>

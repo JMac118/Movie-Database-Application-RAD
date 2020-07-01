@@ -29,6 +29,7 @@
   
   <div class="content">
     <h1>Search</h1>
+    <p>Enter nothing to view all</p>
         <form class="formText" action="search_results.php" method="post">
         Movie Title: <input type="text" name = "title">
         

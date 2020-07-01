@@ -28,6 +28,7 @@
 
   <div class="content">
     <h1>Browse</h1>
+    <p>Enter nothing to view all</p>
     <p>You can browse movies by either genre, rating, year or combination.</p>
         <form action="browse_results.php" method="post">
         

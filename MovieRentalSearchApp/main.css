@@ -111,6 +111,11 @@ input[type=password], select, textarea{
     width: auto;    
     font-size: 1.5vw;
 }
+
+.content p{
+    font-size: medium;
+}
+
 .content ul, .content ol { 
     padding: 0 15px 15px 40px;
 }
